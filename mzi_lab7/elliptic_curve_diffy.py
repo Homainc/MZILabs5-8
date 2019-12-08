@@ -43,4 +43,5 @@ if __name__ == "__main__":
     data = base_point * 2
     encrypted = dh.encrypt(data, pub_key, random.randint(1, 100))
     decrypted = dh.decrypt(encrypted, priv_key)
-    print(decrypted == data)
+    print('Is Valid? ', decrypted == data)
+    
